@@ -1,7 +1,7 @@
 import { Button, Image } from '@nextui-org/react';
 export default function Home() {
   return (
-    <div className="bg-[#fdf6c0]  min-h-screen w-screen  pb-20  sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-white  min-h-screen w-screen  pb-20  sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-4">
         <div className='relative w-full h-[36.5rem] overflow-hidden'>
           <div className="absolute h-full bg-black rounded-b-xl bg-opacity-25 w-full z-20 center-col text-white">
