@@ -41,7 +41,7 @@ function NavBar() {
                                         </div>
                                         <div className=' m-auto'>
                                             <Button className='h-20 w-20 p-0 m-auto shadow'>
-                                                <Image className='w-20 h-20  object-cover' src='https://images.unsplash.com/photo-1606621865521-ee38863a285d?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
+                                                <Image className='w-20 h-20  object-cover' src='https://www.kindercare.com/-/media/kindercare/images/personalization/kclchomepagepersonalizationimagehs.jpg?h=800&w=1200&la=en&hash=AD1E88ADE8FD9DD27945CC7E372A0FAF' alt='' />
 
                                             </Button>
                                             <p className='font-light text-sm text-center text-black'>{menuItem[2]}</p>
