@@ -69,7 +69,7 @@ function NavBar() {
                     )}
                 </ModalContent>
             </Modal >
-            <Button onPress={() => { setShowMenu(true) }} className='h-20 w-16 rounded-t-full min-w-0 bg-[#f26d5c] p-0 fixed bottom-1 right-[40%] '></Button>
+            <Button onPress={() => { setShowMenu(true) }} className='h-20 w-16 rounded-t-full min-w-0 bg-[#f26d5c] p-0 fixed bottom-1 right-[40%] z-50'></Button>
         </div>
     )
 }
