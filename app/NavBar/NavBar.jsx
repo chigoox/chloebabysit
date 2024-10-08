@@ -32,7 +32,7 @@ function NavBar() {
                                             <p className='font-light text-sm text-center text-black'>{menuItem[0]}</p>
                                         </div>
                                         <div className=' m-auto'>
-                                            <Button className='h-20 w-20 p-0  m-auto'>
+                                            <Button className='h-20 w-20 p-0 shadow m-auto'>
                                                 <Image className='w-20 h-20  object-cover' src='https://plus.unsplash.com/premium_photo-1689620817504-2f77cbddf142?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
 
                                             </Button>
@@ -40,7 +40,7 @@ function NavBar() {
 
                                         </div>
                                         <div className=' m-auto'>
-                                            <Button className='h-20 w-20 p-0 m-auto'>
+                                            <Button className='h-20 w-20 p-0 m-auto shadow'>
                                                 <Image className='w-20 h-20  object-cover' src='https://images.unsplash.com/photo-1606621865521-ee38863a285d?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
 
                                             </Button>
@@ -48,7 +48,7 @@ function NavBar() {
 
                                         </div>
                                         <div className=' m-auto'>
-                                            <Button className='h-40 w-20 p-0  m-auto'>
+                                            <Button className='h-40 w-20 p-0 shadow  m-auto'>
                                                 <Image className='w-full h-40 object-cover' src='https://images.unsplash.com/photo-1519709042477-8de6eaf1fdc5?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
 
                                             </Button>
