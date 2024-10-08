@@ -13,7 +13,7 @@ export default function Home() {
         <div>
           {[1, 2, 3, 4].map((item) => {
             return (
-              <Button >{item}</Button>
+              <Button key={item}>{item}</Button>
             )
           })}
         </div>
