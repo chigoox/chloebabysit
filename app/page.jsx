@@ -1,4 +1,3 @@
-import NavBar from '@/app/NavBar/NavBar'
 import { Image } from '@nextui-org/react';
 export default function Home() {
   return (
@@ -10,6 +9,9 @@ export default function Home() {
             <p className='text-[#e6e6e6] text-center drop-shadow-sm shadow-black'>Experianced and dependable babysitters & nannies</p>
           </div>
           <Image className='w-full h-full rounded-t-none object-cover' src='https://images.unsplash.com/photo-1570545917537-873e36d4f64a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
+        </div>
+        <div>
+
         </div>
       </main>
 
