@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 function NavBar() {
-    const [showMenu, setShowMenu] = useState(true)
+    const [showMenu, setShowMenu] = useState(false)
     const menuItem = ['About Us', 'Contact Us', 'Enroll', 'Locations']
     console.log(showMenu)
     return (
