@@ -1,6 +1,5 @@
 'use client'
-import { Button, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from '@nextui-org/react'
-import React from 'react'
+import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from '@nextui-org/react'
 
 function InfoPage({ showMenu, setShowMenu }) {
 
