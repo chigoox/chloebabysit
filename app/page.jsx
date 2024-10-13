@@ -7,7 +7,7 @@ export default function Home() {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <div className="bg-white  min-h-screen w-screen  pb-10  sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-white  min-h-screen w-screen overflow-hidden pb-10  sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col">
         <div className='relative w-full h-[36.5rem] overflow-hidden'>
           <div className="absolute h-full bg-black rounded-b-xl bg-opacity-25 w-full z-20 center-col text-white">
@@ -17,7 +17,7 @@ export default function Home() {
           <Image className='w-full h-full rounded-t-none object-cover' src='https://images.unsplash.com/photo-1570545917537-873e36d4f64a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
         </div>
         <InfoPage showMenu={showMenu} setShowMenu={setShowMenu} />
-        <div className='grid grid-cols-3 w-96 gap-2 p-2 items-center justify-center'>
+        <div className='grid  grid-cols-3 w-96 md:w-full  gap-2 p-2 items-center justify-center'>
           {['How to enroll', 'Health & Safety', 'More than a babysitter',].map((item, index) => {
             const imgs = [
               'https://www.kindercare.com/-/media/kindercare/features/personalization/kclc_homepage_personalization_tile_enroll.jpg?h=800&w=800&la=en&hash=35A6FD9CFA26C41A3BF032524954BDE4',
@@ -25,7 +25,7 @@ export default function Home() {
               'https://www.kindercare.com/-/media/kindercare/features/personalization/kclc_homepage_personalization_tile_morethandaycare.jpg?h=800&w=800&la=en&hash=81D83D3016EBF6230C5A0DA72FD371FD'
             ]
             return (
-              <Button onPress={() => { setShowMenu({ currentMenu: item }) }} className='h-32 p-0 md:h-32  col-span-1 text-center' key={item}>
+              <Button onPress={() => { setShowMenu({ currentMenu: item }) }} className='h-32 p-0 md:h-32 md:w-32 col-span-1 m-auto text-center' key={item}>
                 <h1 className='text-center w-fit text-wrap absolute z-20 bottom-2 text-white font-bold'>{item}</h1>
                 <Image className='h-32 w-full' src={imgs[index]} alt='' />
               </Button>
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='md:w-1/2 h-96 flex  overflow-hidden bg-[#ffd2af] p-4'>
+          <div className='md:w-1/2 h-96 flex  overflow-hidden bg-[#ffd2af]'>
             <Image className='h-full w-full object-cover' src='https://www.kindercare.com/-/media/kindercare/images/personalization/kclc_homepage_personalization_image_morethandaycare.jpg?h=800&w=1200&la=en&hash=60AA673220CF3A5251988AF34920CAC2' alt='baby smiling' />
           </div>
         </div>
@@ -50,10 +50,10 @@ export default function Home() {
 
           <Image className='rounded-none rounded-t-none h-[29rem] md:h-full w-full object-cover' src='https://plus.unsplash.com/premium_photo-1663126735125-5b2358492ab8?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='baby smiling' />
 
-          <div className="bg-black bg-opacity-25 h-full w-full absolute z-10   p-4 min-h-96">
-            <h3 className='text-white md:w-1/3 text-2xl'>More Than Just a Babysitter</h3>
-            <h2 className='mb-4 w-1/3 text-black font-bold text-4xl md:text-4xl'>Keeping your child safe is our top priority.</h2>
-            <h5 className='text-white  md:w-1/3'> Our dedicated team goes beyond basic supervision, offering engaging activities that promote learning and creativity. We prioritize the safety, growth, and well-being of every child, ensuring peace of mind for parents. </h5>
+          <div className=" h-auto w-full  p-4 min-h-96">
+            <h3 className='text-black text-xl font-bold'>More Than Just a Babysitter</h3>
+            <h2 className='mb-2 text-black font-bold text-4xl md:text-4xl'>Keeping your child safe is our top priority.</h2>
+            <h5 className='text-black '> Our dedicated team goes beyond basic supervision, offering engaging activities that promote learning and creativity. We prioritize the safety, growth, and well-being of every child, ensuring peace of mind for parents. </h5>
           </div>
 
         </div>
