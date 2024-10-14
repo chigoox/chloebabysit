@@ -52,8 +52,8 @@ export default function Home() {
 
           <div className=" h-auto w-full  p-4 min-h-96">
             <h3 className='text-black text-xl font-bold'>More Than Just a Babysitter</h3>
-            <h2 className='mb-2 text-black font-bold text-4xl md:text-4xl'>Keeping your child safe is our top priority.</h2>
-            <h5 className='text-black '> Our dedicated team goes beyond basic supervision, offering engaging activities that promote learning and creativity. We prioritize the safety, growth, and well-being of every child, ensuring peace of mind for parents. </h5>
+            <h2 className='mb-2 text-black font-bold text-3xl md:text-4xl'>Trust us to be your partner in providing a nurturing environment.</h2>
+            <h5 className='text-black w-[80%] '> Our dedicated team goes beyond basic supervision, offering engaging activities that promote learning and creativity. We prioritize the safety, growth, and well-being of every child, ensuring peace of mind for parents. </h5>
           </div>
 
         </div>
