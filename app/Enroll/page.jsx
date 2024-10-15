@@ -17,7 +17,7 @@ export default function SignUpForm() {
     const [messageApi, contextHolder] = message.useMessage();
     console.log(FormData)
     return (
-        <main className='h-screen'>
+        <main className='h-screen mb-20'>
             {contextHolder}
             {Submit && <Loading />}
             <div className='h-full relative'>
@@ -29,7 +29,7 @@ export default function SignUpForm() {
             <Card
 
                 xs
-                className='md:w-1/3 m-auto p-4 relative md:absolute bottom-40 md:right-12 z-30 bg-opacity-75'
+                className='md:w-1/3 m-auto p-4 relative fadeIn  md:absolute bottom-60 md:bottom-40 md:right-12 z-30 bg-opacity-75'
             >
 
                 <form onChange={({ target }) => { setFormData((old) => ({ ...old, [target.name]: target.value })) }} className='flex flex-col gap-4 '>
@@ -82,7 +82,7 @@ export default function SignUpForm() {
                         await addToDoc('Clients', `${clientID}`, FormData)
                         await addToDoc('Admin', 'IDs', { clientID: clientID + 1 })
                         push('/?enrolled=true')
-                    }} className='w-full'  >
+                    }} className='w-full mb-20'  >
                         Submit
                     </Button>
 

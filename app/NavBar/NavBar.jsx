@@ -41,7 +41,7 @@ function NavBar() {
 
                                         </div>
                                         <div className=' m-auto fadeInZoom'>
-                                            <Button onPress={() => { push('/Enroll') }} className='h-20 w-20 p-0 m-auto shadow'>
+                                            <Button onPress={() => { setShowMenu(false); push('/Enroll') }} className='h-20 w-20 p-0 m-auto shadow'>
                                                 <Image className='w-20 h-20  object-cover' src='https://www.kindercare.com/-/media/kindercare/images/personalization/kclchomepagepersonalizationimagehs.jpg?h=800&w=1200&la=en&hash=AD1E88ADE8FD9DD27945CC7E372A0FAF' alt='' />
 
                                             </Button>
