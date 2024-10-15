@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import { Button, Modal } from 'antd';
 import { Image } from '@nextui-org/react';
+import { Modal } from 'antd';
+import { useState } from 'react';
 import { IoIosCloseCircle } from "react-icons/io";
 
 const ThanksForEnroll = ({ opened }) => {
     const [isModalOpen, setIsModalOpen] = useState(opened);
-    const showModal = () => {
-        setIsModalOpen(true);
-    };
+
     const handleOk = () => {
         setIsModalOpen(false);
     };

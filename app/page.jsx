@@ -1,9 +1,9 @@
 'use client'
+import InfoPage from '@/app/HomePage/InfoPage';
+import ThanksForEnroll from '@/app/HomePage/ThanksForEnroll';
 import { Button, Image } from '@nextui-org/react';
-import InfoPage from '@/app/HomePage/InfoPage'
+import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
-import ThanksForEnroll from '@/app/HomePage/ThanksForEnroll'
 
 
 export default function Home() {
