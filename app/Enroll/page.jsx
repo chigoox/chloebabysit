@@ -1,10 +1,10 @@
 'use client'
+import { addToDoc, watchDocument } from '@/UTIL/Database';
+import Loading from '@/app/Loading';
 import { Button, Card, Image, Input, Textarea } from '@nextui-org/react';
-import { useEffect, useState } from 'react';
-import { addToDoc, updateDatabaseItem, watchDocument } from '@/UTIL/Database'
-import Loading from '@/app/Loading'
-import { useRouter } from 'next/navigation';
 import { message } from 'antd';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 export default function SignUpForm() {
     const [IDs, setIDs] = useState()
     const clientID = IDs?.clientID ? IDs?.clientID : 1
