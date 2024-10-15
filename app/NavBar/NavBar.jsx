@@ -3,7 +3,7 @@ import { Button, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-
+import { LuMenuSquare } from "react-icons/lu";
 function NavBar() {
     const [showMenu, setShowMenu] = useState(false)
     const menuItem = ['About Us', 'Contact Us', 'Enroll', 'Locations']
@@ -70,7 +70,9 @@ function NavBar() {
                     )}
                 </ModalContent>
             </Modal >
-            <Button onPress={() => { setShowMenu(true) }} className='h-20 w-16 rounded-t-full min-w-0 bg-[#f26d5c] p-0 fixed bottom-1 right-[40%] z-50'></Button>
+            <Button onPress={() => { setShowMenu(true) }} className='h-20 w-16 rounded-t-full min-w-0 bg-[#f26d5c] p-0 fixed bottom-1 right-[40%] z-50'>
+                <LuMenuSquare size={32} />
+            </Button>
         </div>
     )
 }
