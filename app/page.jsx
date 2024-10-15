@@ -2,12 +2,16 @@
 import { Button, Image } from '@nextui-org/react';
 import InfoPage from '@/app/HomePage/InfoPage'
 import { useState } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
+import ThanksForEnroll from '@/app/HomePage/ThanksForEnroll'
+
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState(false)
-
+  const enrolled = useSearchParams().get('enrolled')
   return (
     <div className="bg-white  min-h-screen w-screen overflow-hidden pb-10  sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <ThanksForEnroll opened={enrolled == 'true'} />
       <main className="flex flex-col">
         <div className='relative w-full h-[36.5rem] overflow-hidden'>
           <div className="absolute h-full bg-black rounded-b-xl bg-opacity-25 w-full z-20 center-col text-white">

@@ -1,12 +1,13 @@
 'use client'
 import { Button, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from '@nextui-org/react'
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 function NavBar() {
     const [showMenu, setShowMenu] = useState(false)
     const menuItem = ['About Us', 'Contact Us', 'Enroll', 'Locations']
-    console.log(showMenu)
+    const { push } = useRouter()
     return (
         <div>
             < Modal isOpen={showMenu} backdrop={'transprent'} onOpenChange={() => { setShowMenu(false) }
@@ -27,7 +28,7 @@ function NavBar() {
                                     <Masonry gutter="10px">
                                         <div className=' m-auto fadeInZoom'>
                                             <Button className='h-40 w-20 p-0 shadow'>
-                                                <Image className='w-full h-40 object-cover' src='https://images.unsplash.com/photo-1592106680408-e7e63efbc7ba?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
+                                                <Image className='w-full h-40 object-cover' src='https://images.unsplash.com/photo-1475178278683-8c225ae5ec3e?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
                                             </Button>
                                             <p className='font-light text-sm text-center text-black'>{menuItem[0]}</p>
                                         </div>
@@ -40,7 +41,7 @@ function NavBar() {
 
                                         </div>
                                         <div className=' m-auto fadeInZoom'>
-                                            <Button className='h-20 w-20 p-0 m-auto shadow'>
+                                            <Button onPress={() => { push('/Enroll') }} className='h-20 w-20 p-0 m-auto shadow'>
                                                 <Image className='w-20 h-20  object-cover' src='https://www.kindercare.com/-/media/kindercare/images/personalization/kclchomepagepersonalizationimagehs.jpg?h=800&w=1200&la=en&hash=AD1E88ADE8FD9DD27945CC7E372A0FAF' alt='' />
 
                                             </Button>
