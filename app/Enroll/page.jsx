@@ -74,8 +74,11 @@ export default function SignUpForm() {
 
                     <Button onPress={async () => {
                         setSubmit(true)
-                        if (!FormData.name || !FormData.phone || !FormData.availability) {
-                            messageApi.error('Name, Phone, Email, and Availability required!')
+                        if (!FormData.fullName || !FormData.phone || !FormData.availability) {
+                            if (!FormData.fullName) messageApi.error('Name required!')
+                            if (!FormData.email) messageApi.error('Email required!')
+                            if (!FormData.phone) messageApi.error('Phone required!')
+                            if (!FormData.availability) messageApi.error('Availability required!')
                             setSubmit(false)
                             return
                         }
