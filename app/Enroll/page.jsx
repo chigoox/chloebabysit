@@ -1,8 +1,8 @@
 'use client'
 import { addToDoc, watchDocument } from '@/UTIL/Database';
 import Loading from '@/app/Loading';
-import { Button, Card, Image, Input, Textarea } from '@nextui-org/react';
-import { message } from 'antd';
+import { Button, Card, Image, Input, SelectItem, SelectSection, Textarea } from '@nextui-org/react';
+import { message, Select } from 'antd';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 export default function SignUpForm() {
@@ -71,7 +71,19 @@ export default function SignUpForm() {
                         rows={4}
                         name='comments'
                     />
+                    <Card className='p-4 center bg-opacity-75'>
+                        Cleaning Services
+                        <Select
+                            defaultValue="lucy"
+                            style={{ width: 120 }}
+                            onChange={''}
+                            options={[
+                                { value: 'No', label: 'No' },
+                                { value: 'Yes', label: 'Yes' },
 
+                            ]}
+                        />
+                    </Card>
                     <Button onPress={async () => {
                         setSubmit(true)
                         if (!FormData.fullName || !FormData.phone || !FormData.availability) {
