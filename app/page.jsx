@@ -19,7 +19,7 @@ export default function Home() {
       <Suspense>
         <CheckEnroll />
       </Suspense>
-      <main className="flex flex-col">
+      <main className="flex flex-col lg:px-40">
         <div className='relative w-full h-[36.5rem] overflow-hidden'>
           <div className="absolute h-full bg-black rounded-b-xl bg-opacity-25 w-full z-20 center-col text-white">
             <h1 className='text-3xl text-center   font-bold'>Top-notch care for your little ones</h1>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <InfoPage showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className='grid  grid-cols-3 w-96 md:w-full  gap-2 p-2 items-center justify-center'>
-          {['How to enroll', 'Health & Safety', 'More than a babysitter',].map((item, index) => {
+          {['How To Enroll', 'Health & Safety', 'More than a babysitter',].map((item, index) => {
             const imgs = [
               'https://www.kindercare.com/-/media/kindercare/features/personalization/kclc_homepage_personalization_tile_enroll.jpg?h=800&w=800&la=en&hash=35A6FD9CFA26C41A3BF032524954BDE4',
               'https://www.kindercare.com/-/media/kindercare/features/personalization/kclchomepagepersonalizationtilehs.jpg?h=800&w=800&la=en&hash=1CD5F8359117E0955CEB817C836058DF',
