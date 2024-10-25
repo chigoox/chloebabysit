@@ -12,7 +12,7 @@ function CheckEnroll() {
 
 }
 export default function Home() {
-  const [showMenu, setShowMenu] = useState(false)
+  //const [showMenu, setShowMenu] = useState(false)
 
   return (
     <div className="bg-white  min-h-screen w-screen overflow-hidden pb-10  font-[family-name:var(--font-geist-sans)]">
