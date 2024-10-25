@@ -2,7 +2,7 @@
 import ThanksForEnroll from '@/app/HomePage/ThanksForEnroll';
 import { Button, Image } from '@nextui-org/react';
 import { useSearchParams } from 'next/navigation';
-import { Suspense, useState } from 'react';
+import { Suspense } from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 function CheckEnroll() {
