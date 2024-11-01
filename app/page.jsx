@@ -90,7 +90,7 @@ export default function Home() {
 
         <Image className='rounded-full rounded-b-none lg:w-1/2  h-[29rem] md:h-full w-full object-cover' src='https://plus.unsplash.com/premium_photo-1701984401462-f1c709ce722e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='baby smiling' />
 
-        <div className=" h-auto w-full lg:w-[30rem] lg:m-auto  p-4 min-h-96 bg-[#e6eeb7] rounded-b-full  ">
+        <div className=" h-auto w-full lg:w-[30rem] lg:m-auto  p-4 min-h-96 bg-[#e6eeb7]">
           <h3 className='text-black text-xl font-bold'>More Than Just a Babysitter</h3>
           <h2 className='mb-2 text-black font-bold text-3xl md:text-4xl'>Trust us to be your partner in providing a nurturing environment.</h2>
           <h5 className='text-black text-center'> Our dedicated team goes beyond basic supervision, offering engaging activities that promote learning and creativity. We prioritize the safety, growth, and well-being of every child, ensuring peace of mind for parents. </h5>

@@ -7,8 +7,8 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 export default function SignUpForm() {
     const [IDs, setIDs] = useState()
-    const clientID = IDs?.clientID ? IDs?.clientID : 1
-    const [FormData, setFormData] = useState({ clientID: clientID, contacted: false, paymentAmount: 0, paymentDue: '12/12/9999' })
+    const EmployeeID = IDs?.clientID ? IDs?.clientID : 1
+    const [FormData, setFormData] = useState({ clientID: EmployeeID, contacted: false })
     const [Submit, setSubmit] = useState(false)
     const { push } = useRouter()
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function SignUpForm() {
                 <h1 className='font-bold text-center top-12 absolute z-20  w-full'>
                     Chloe's Baby sitting services
                 </h1>
-                <Image className='rounded-t-none h-screen w-screen object-cover' src={'https://images.unsplash.com/photo-1561567131-f7d83083aee0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='cute baby' />
+                <Image className='rounded-t-none h-screen w-screen object-cover' src={'https://images.unsplash.com/photo-1445633629932-0029acc44e88?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='cute baby' />
             </div>
             <Card
 
@@ -32,7 +32,7 @@ export default function SignUpForm() {
                 className='md:w-1/3 m-auto p-4 relative fadeIn  md:absolute bottom-60 md:bottom-40 md:right-12 z-30 bg-opacity-75'
             >
 
-                <form onChange={({ target }) => { setFormData((old) => ({ ...old, [target.name]: target.value })) }} className='flex flex-col gap-4 '>
+                <form onChange={({ target }) => { setFormData((old) => ({ ...old, [target.name]: target.value })) }} className='flex  flex-col gap-4 '>
 
                     <Input
                         label="Full Name"
@@ -48,6 +48,7 @@ export default function SignUpForm() {
                         placeholder="Enter your email"
                         required
                         name='email'
+                        className='text-black'
                     />
 
                     <Input
@@ -67,23 +68,11 @@ export default function SignUpForm() {
 
                     <Textarea
                         label="Additional Comments"
-                        placeholder="Let us know any other details..."
+                        placeholder="Let us know how you standout form the crowd"
                         rows={4}
                         name='comments'
                     />
-                    <Card className='p-4 center bg-opacity-75'>
-                        Cleaning Services
-                        <Select
-                            defaultValue="lucy"
-                            style={{ width: 120 }}
-                            onChange={''}
-                            options={[
-                                { value: 'No', label: 'No' },
-                                { value: 'Yes', label: 'Yes' },
 
-                            ]}
-                        />
-                    </Card>
                     <Button onPress={async () => {
                         setSubmit(true)
                         if (!FormData.fullName || !FormData.phone || !FormData.availability) {
@@ -94,8 +83,8 @@ export default function SignUpForm() {
                             setSubmit(false)
                             return
                         }
-                        await addToDoc('Clients', `${clientID}`, FormData)
-                        await addToDoc('Admin', 'IDs', { clientID: clientID + 1 })
+                        await addToDoc('Clients', `${EmployeeID}`, FormData)
+                        await addToDoc('Admin', 'IDs', { clientID: EmployeeID + 1 })
                         push('/?enrolled=true')
                     }} className='w-full mb-20'  >
                         Submit

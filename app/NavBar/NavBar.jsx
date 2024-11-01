@@ -6,7 +6,7 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import { LuMenuSquare } from "react-icons/lu";
 function NavBar() {
     const [showMenu, setShowMenu] = useState(false)
-    const menuItem = ['About Us', 'Contact Us', 'Enroll', 'Locations']
+    const menuItem = ['About Us', 'Contact Us', 'Find My Nanny', 'Find My Family']
     const { push } = useRouter()
     return (
         <div>
@@ -43,7 +43,7 @@ function NavBar() {
 
                                         </div>
                                         <div className=' m-auto fadeInZoom'>
-                                            <Button onPress={() => { setShowMenu(false); push(`/${menuItem[2]}`) }} className='h-20 w-20 p-0 m-auto shadow'>
+                                            <Button onPress={() => { setShowMenu(false); push(`/${menuItem[2].replace(/\s/g, "")}`) }} className='h-20 w-20 p-0 m-auto shadow'>
                                                 <Image className='w-20 h-20  object-cover' src='https://www.kindercare.com/-/media/kindercare/images/personalization/kclchomepagepersonalizationimagehs.jpg?h=800&w=1200&la=en&hash=AD1E88ADE8FD9DD27945CC7E372A0FAF' alt='' />
 
                                             </Button>
@@ -51,8 +51,8 @@ function NavBar() {
 
                                         </div>
                                         <div className=' m-auto fadeInZoom'>
-                                            <Button className='h-40 w-20 p-0 shadow  m-auto ' onPress={() => { setShowMenu(false); push(`/${menuItem[3]}`) }}>
-                                                <Image className='w-full h-40 object-cover' src='https://images.unsplash.com/photo-1519709042477-8de6eaf1fdc5?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
+                                            <Button className='h-40 w-20 p-0 shadow  m-auto ' onPress={() => { setShowMenu(false); push(`/${menuItem[3].replace(/\s/g, "")}`) }}>
+                                                <Image className='w-full h-40 object-cover' src='https://plus.unsplash.com/premium_photo-1661281211518-7bc99840fe64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
 
                                             </Button>
                                             <p className='font-light text-sm text-center text-black'>{menuItem[3]}</p>
