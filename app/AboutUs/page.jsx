@@ -67,7 +67,7 @@ function page() {
                 <h1 className='text-3xl mt-40 text-center'>The benefits of working with our agency:</h1>
                 <div className="center-col">
                     <div className='grid grid-cols-2 w-[80%] my-2'>
-                        {whyChloes.map(I => (<div className='flex gap-2 w-64 h-20 '>
+                        {whyChloes.map(I => (<div key={I} className='flex gap-2 w-64 h-20 '>
                             <AiOutlineArrowRight />
                             <h1 className='w-[90%]'>{I}</h1>
                         </div>))}
