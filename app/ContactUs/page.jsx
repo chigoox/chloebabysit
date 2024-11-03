@@ -1,8 +1,6 @@
 'use client'
 // pages/contact.js
-import { Button, Card, Container, Grid, Input, Link, Row, Spacer, Text, Textarea } from "@nextui-org/react";
-import { div } from "framer-motion/client";
-import React from 'react';
+import { Link } from "@nextui-org/react";
 
 const ContactUs = () => {
     return (
