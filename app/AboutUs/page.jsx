@@ -18,7 +18,7 @@ function page() {
         "Replacement protection"
     ];
     return (
-        <div className=' w-full h-full  overflow-x-scroll hidescroll'>
+        <div className=' w-full h-full center-col  overflow-x-scroll hidescroll'>
             <div className="flex md:flex-row flex-col items-center justify-center">
                 <Image className='w-96 h-96 md:h-64 md:w-64 flex-shrink-0  m-auto object-cover' src='https://www.kindercare.com/-/media/kindercare/images/how-to-enroll/kclc_enrollment-landing-page_homepage-tile_final-contentblock1-600x690.png?h=690&w=600&la=en&hash=16E166BDCFF85E24BCE28D58CCA84747' alt='monkey' />
                 <h1 className='font-bold text-3xl md:w-1/2 lg:w-64 text-center md:text-left'>Making the lives of busy parents easier.</h1>
@@ -45,7 +45,7 @@ function page() {
                 </div>
             </Card>
 
-            <div className=' m-auto p-40'>
+            <div className=' m-auto md:p-40'>
                 <Image className='w-full h-96 object-cover' src='https://www.kindercare.com/-/media/kindercare/pages/enrollment-page/enrollment-lp_asset-enrollingiseasyas123.png?h=624&w=724&la=en&hash=195240EB6355257A99FDC6114882051D' alt='bear?' />
             </div>
 
@@ -64,10 +64,10 @@ function page() {
 
             <Image className='w-[85%] object-cover rounded-none m-auto relative' src='https://nanniesbynoa.com/wp-content/uploads/2022/07/Why-NbN-on-About-Page.jpg' alt='baby' ></Image>
             <div className='bg-[#e6eeb7] w-full border relative bottom-20 '>
-                <h1 className='text-3xl mt-40 text-center'>The benefits of working with our agency:</h1>
+                <h1 className='text-3xl mt-40 text-center p-4 md:p-0'>The benefits of working with our agency:</h1>
                 <div className="center-col">
-                    <div className='grid grid-cols-2 w-[80%] my-2'>
-                        {whyChloes.map(I => (<div key={I} className='flex gap-2 w-64 h-20 '>
+                    <div className='grid grid-cols-2 md:w-[80%] my-2 '>
+                        {whyChloes.map(I => (<div key={I} className='flex gap-2 items-center w-64 h-20 p-2 m-auto'>
                             <AiOutlineArrowRight />
                             <h1 className='w-[90%]'>{I}</h1>
                         </div>))}
@@ -76,9 +76,9 @@ function page() {
                 </div>
             </div>
 
-            <div>
-                <h1>Get the family support you need today.</h1>
-                <p>We prioritize finding a match that best
+            <div className='px-8 center-col mb-20'>
+                <h1 className='font-bold text-3xl'>Get the family support you need today.</h1>
+                <p className='text-lg mt-4 md:w-1/3 m-auto'>We prioritize finding a match that best
                     compliments your family’s values, dynamic,
                     and unique care requirements. We facilitate
                     strong partnerships with solid, rewarding, and
@@ -86,9 +86,7 @@ function page() {
                     desire to support your family and household.</p>
             </div>
 
-            <div>
-                <h1>Don’t just take our word for it…</h1>
-            </div>
+
         </div>
     )
 }

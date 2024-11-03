@@ -21,7 +21,7 @@ export default function SignUpForm() {
             {contextHolder}
             {Submit && <Loading />}
             <div className='h-full relative'>
-                <h1 className='font-bold text-center top-12 absolute z-20  w-full'>
+                <h1 className='font-bold text-center top-12 text-white bg-black w-fit absolute z-20  m-auto p-1'>
                     Chloe's Baby sitting services
                 </h1>
                 <Image className='rounded-t-none h-screen w-screen object-cover' src={'https://images.unsplash.com/photo-1445633629932-0029acc44e88?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='cute baby' />
@@ -39,6 +39,7 @@ export default function SignUpForm() {
                         placeholder="Enter your full name"
                         required
                         name='fullName'
+                        className='text-black placeholder:text-black'
                     />
 
 
