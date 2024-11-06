@@ -2,9 +2,11 @@
 import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Image, Link, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { AiOutlineDotChart } from 'react-icons/ai';
 import { FaBabyCarriage } from "react-icons/fa";
 import { LuMenuSquare } from "react-icons/lu";
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import { GoDotFill } from "react-icons/go";
 function NavBar() {
     const [showMenu, setShowMenu] = useState(false)
     const menuItem = ['About Us', 'Contact Us', 'Find My Nanny', 'Find My Family']
@@ -12,9 +14,16 @@ function NavBar() {
     return (
         <div>
             <Navbar shouldHideOnScroll>
-                <NavbarBrand className='gap-2'>
-                    <FaBabyCarriage />
-                    <p className="font-bold text-inherit">Nannies by chloe</p>
+                <NavbarBrand className='flex-col'>
+                    <div className='flex gap-2'>
+                        <FaBabyCarriage />
+                        <p className="font-bold text-inherit">Nannies by chloe</p>
+                    </div>
+                    <div className='text-xs flex items-center font-bold'>
+                        <h1>(646) 749-1688</h1>
+                        <GoDotFill />
+                        <h1>(646) 749-1688</h1>
+                    </div>
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     <NavbarItem>
