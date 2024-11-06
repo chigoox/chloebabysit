@@ -72,8 +72,14 @@ export default function FindFamilyForm() {
                         rows={4}
                         name='comments'
                     />
-                    <Card className='p-4 center bg-opacity-75'>
+                    <Card className='p-4 font-bold text-2xl w-fit m-auto gap-2 center bg-opacity-75'>
                         Add Maid Services
+                        <p className='text-sm text-center font-light w-64'>
+                            Chloe's Maid Services delivers reliable,
+                            thorough cleaning for homes and offices,
+                            ensuring a spotless space you can enjoy
+                            stress-free.
+                        </p>
                         <Select
                             defaultValue="No"
                             style={{ width: 120 }}
