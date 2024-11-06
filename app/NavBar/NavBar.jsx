@@ -14,15 +14,17 @@ function NavBar() {
         <div>
             <Navbar shouldHideOnScroll>
                 <NavbarBrand className='flex-col'>
-                    <div className='flex gap-2'>
-                        <FaBabyCarriage />
-                        <p className="font-bold text-inherit">Nannies by chloe</p>
-                    </div>
-                    <div className='text-xs flex items-center font-bold'>
-                        <h1>(646) 749-1688</h1>
-                        <GoDotFill />
-                        <h1>(646) 749-1688</h1>
-                    </div>
+                    <Link href='/' className="center-col text-black">
+                        <div className='flex gap-2'>
+                            <FaBabyCarriage />
+                            <p className="font-bold text-inherit">Nannies by chloe</p>
+                        </div>
+                        <div className='text-xs flex items-center font-bold'>
+                            <h1>(646) 749-1688</h1>
+                            <GoDotFill />
+                            <h1>(646) 749-1688</h1>
+                        </div>
+                    </Link>
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     <NavbarItem>
