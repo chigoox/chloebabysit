@@ -5,7 +5,6 @@ import { Link } from "@nextui-org/react";
 const ContactUs = () => {
     return (
         <div className="center-col">
-            <div className="center relative top-24 font-bold"><Link href="/">Home</Link></div>
             <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
                 <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
                     <h2 className="mb-4 text-center text-2xl font-bold text-gray-800">Contact Us</h2>
@@ -53,8 +52,7 @@ const ContactUs = () => {
                     </form>
 
                     <div className="mt-8 text-center text-sm text-gray-600">
-                        <p>Or reach us at: <strong>contact@nannycare.com</strong></p>
-                        <p>Call us: <strong>(123) 456-7890</strong></p>
+                        <p>Call us: <strong>(646) 749-1688</strong></p>
                     </div>
 
                 </div>

@@ -1,15 +1,56 @@
 'use client'
-import { Button, Image, Link, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from '@nextui-org/react'
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Image, Link, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { useRouter } from 'next/navigation';
-import React, { useState } from 'react'
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import { useState } from 'react';
+import { FaBabyCarriage } from "react-icons/fa";
 import { LuMenuSquare } from "react-icons/lu";
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 function NavBar() {
     const [showMenu, setShowMenu] = useState(false)
     const menuItem = ['About Us', 'Contact Us', 'Find My Nanny', 'Find My Family']
     const { push } = useRouter()
     return (
         <div>
+            <Navbar shouldHideOnScroll>
+                <NavbarBrand className='gap-2'>
+                    <FaBabyCarriage />
+                    <p className="font-bold text-inherit">Nannies by chloe</p>
+                </NavbarBrand>
+                <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                    <NavbarItem>
+                        <Link color="foreground" href="/">
+                            Home
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem isActive>
+                        <Link href="/AboutUs" aria-current="page">
+                            About
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Link color="foreground" href="/ContactUs">
+                            Contact Us
+                        </Link>
+                    </NavbarItem>
+                </NavbarContent>
+                <NavbarContent justify="end">
+
+                    <NavbarItem>
+                        <Dropdown>
+                            <DropdownTrigger>
+                                <Button as={Link} color="primary" href="#" variant="flat">
+                                    Sign Up
+                                </Button>
+                            </DropdownTrigger>
+                            <DropdownMenu aria-label="Static Actions">
+                                <DropdownItem key="new">Find A Nanny</DropdownItem>
+                                <DropdownItem key="copy">Find A Family</DropdownItem>
+                            </DropdownMenu>
+                        </Dropdown>
+
+                    </NavbarItem>
+                </NavbarContent>
+            </Navbar>
             < Modal isOpen={showMenu} backdrop={'transprent'} onOpenChange={() => { setShowMenu(false) }
             } placement='auto' scrollBehavior='inside' className={`h-auto  text-white w-auto overflow-x-hidden md:px-20 lg:px-40 xl:px-32 py-4 bg-[#ffcfa7]   ${{
                 backdrop: "bg-black bg-opacity-100"
