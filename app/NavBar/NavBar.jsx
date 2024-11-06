@@ -43,8 +43,12 @@ function NavBar() {
                                 </Button>
                             </DropdownTrigger>
                             <DropdownMenu aria-label="Static Actions">
-                                <DropdownItem key="new">Find A Nanny</DropdownItem>
-                                <DropdownItem key="copy">Find A Family</DropdownItem>
+                                <DropdownItem key="new">
+                                    <Link href='/FindMyNanny'>Find A Nanny</Link>
+                                </DropdownItem>
+                                <DropdownItem key="copy">
+                                    <Link href='/FindMyFamily'>Find A Family</Link>
+                                </DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
 
