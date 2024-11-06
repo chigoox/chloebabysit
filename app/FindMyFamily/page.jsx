@@ -29,7 +29,7 @@ export default function SignUpForm() {
             <Card
 
                 xs
-                className='md:w-1/3 m-auto p-4 relative fadeIn  md:absolute bottom-60 md:bottom-40 md:right-12 z-30 bg-opacity-75'
+                className='md:w-1/3 bg-black m-auto p-4 relative fadeIn  md:absolute bottom-60 md:bottom-40 md:right-12 z-30 bg-opacity-75'
             >
 
                 <form onChange={({ target }) => { setFormData((old) => ({ ...old, [target.name]: target.value })) }} className='flex  flex-col gap-4 '>

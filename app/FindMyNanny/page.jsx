@@ -29,9 +29,9 @@ export default function FindFamilyForm() {
             <Card
 
                 xs
-                className='md:w-1/3 m-auto p-4 relative fadeIn  md:absolute bottom-60 md:bottom-40 md:right-12 z-30 bg-opacity-75'
+                className='md:w-1/3 bg-black m-auto p-4 relative fadeIn  md:absolute bottom-60 md:bottom-12 md:right-12 z-30 bg-opacity-75'
             >
-                <h1 className={'text-4xl my-4 font-semibold text-center'}>Find Your Nanny</h1>
+                <h1 className={'text-4xl text-white my-4 font-semibold text-center'}>Find Your Nanny</h1>
 
                 <form onChange={({ target }) => { setFormData((old) => ({ ...old, [target.name]: target.value })) }} className='flex flex-col gap-4 '>
 
