@@ -1,6 +1,5 @@
 'use client'
 // pages/contact.js
-import { Link } from "@nextui-org/react";
 
 const ContactUs = () => {
     return (
