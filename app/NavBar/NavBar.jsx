@@ -22,7 +22,7 @@ function NavBar() {
                         <div className='text-xs flex items-center font-bold'>
                             <h1>(646) 749-1688</h1>
                             <GoDotFill />
-                            <h1>(646) 749-1688</h1>
+                            <h1>(973) 816-3073</h1>
                         </div>
                     </Link>
                 </NavbarBrand>
